@@ -1,13 +1,14 @@
-export function useLoadStatics(Compeleted, interval, element) {
+export function useLoadStatics(Compeleted, interval) {
 	let i = 0
 
-	setInterval(() => {
+	return setInterval(() => {
 		if (i == Compeleted) {
 			return
 		}
 		i = i + 1
-		setTimeout(() => {
-			element.innerHTML = `${i}%`
+		return setTimeout(() => {
+			console.log(`${i}%`)
+			return `${i}%`
 		}, interval)
 	}, interval)
 }

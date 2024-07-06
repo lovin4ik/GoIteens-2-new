@@ -1,7 +1,5 @@
-const workList = document.getElementById('homeWorks-list')
-
 export const workRender = homeWorks => {
-	workList.innerHTML = homeWorks
+	return homeWorks
 		.sort((a, b) => a.id - b.id)
 		.map(work => {
 			return `
