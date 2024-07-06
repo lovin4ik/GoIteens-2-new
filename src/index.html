@@ -17,9 +17,11 @@
 			type="image/x-icon"
 		/>
 	</head>
-	<body class="text-white min-h-screen font-ns overflow-x-hidden bg-[#0e0f0f]">
+	<body
+		class="text-white min-h-screen font-ns overflow-x-hidden bg-gradient-to-tr from-darkSecondary to-secondary"
+	>
 		<header
-			class="py-6 px-10 flex justify-between items-center sticky top-0 left-0 w-full bg-[#0e0f0f]/40 backdrop-blur-3xl z-50 after:border after:border-solid after:border-border after:absolute after:bottom-0 after:left-0 after:w-full after:content-['']"
+			class="py-6 px-10 flex justify-between items-center sticky top-0 left-0 w-full bg-gradient-to-bl from-darkSecondary/50 to-secondary/50 backdrop-blur-3xl z-50 after:border after:border-solid after:border-border after:absolute after:bottom-0 after:left-0 after:w-full after:content-['']"
 		>
 			<a
 				href="./index.html"
@@ -31,14 +33,14 @@
 					<li>
 						<a
 							href="#projects"
-							class="text-xl hover:text-primary transition-colors"
+							class="text-xl hover:text-horizonGreen-400 transition-colors"
 							>Projects</a
 						>
 					</li>
 					<li>
 						<a
 							href="#homeWorks"
-							class="text-xl hover:text-primary transition-colors"
+							class="text-xl hover:text-horizonGreen-400 transition-colors"
 							>Home Works</a
 						>
 					</li>
@@ -47,7 +49,7 @@
 		</header>
 		<main>
 			<section
-				class="py-48 relative z-10 after:absolute after:left-[25%] after:top-[20%] after:lg:w-72 after:lg:h-72 after:bg-gradient-radial after:from-brand-400 after:via-[#0e0f0f] after:to-transparent after:-z-10 after:blur-2xl after:md:w-60 after:md:h-60 after:sm:w-52 after:sm:h-52 after:w-44 after:h-44 px-10 flex items-center justify-center flex-col"
+				class="py-48 relative z-10 after:absolute after:left-[25%] after:top-[20%] after:lg:w-72 after:lg:h-72 after:bg-gradient-radial after:from-brand-400 after:to-transparent after:-z-10 after:blur-2xl after:md:w-60 after:md:h-60 after:sm:w-52 after:sm:h-52 after:w-44 after:h-44 px-10 flex items-center justify-center flex-col"
 			>
 				<h2
 					class="text-xl max-w-[250px] font-medium text-center mb-4 lg:text-5xl lg:max-w-[610px] md:max-w-[510px] md:text-4xl sm:text-2xl sm:max-w-[350px]"
@@ -104,7 +106,7 @@
 					>
 				</div>
 				<ul
-					class="grid grid-cols-2 md:grid-cols-3 gap-8 mt-16 justify-center items-center"
+					class="flex flex-wrap gap-8 mt-16 justify-center items-center"
 					id="homeWorks-list"
 				></ul>
 			</section>

@@ -6,7 +6,7 @@ export const renderList = projects => {
 			return `
 				<li
 						class="
-							project__home border border-solid border-border rounded-xl overflow-hidden transition hover:scale-105 shadow-horizonGreen-300/10 shadow-2xl hover:shadow-xl bg-black
+							project__home border border-solid border-border rounded-xl overflow-hidden transition duration-[0.4s] hover:scale-105 hover:border-horizonGreen-200 shadow-horizonGreen-300/10 shadow-2xl hover:shadow-xl bg-sidebar flex items-center justify-center flex-col
 						"
 					>
 						<a
