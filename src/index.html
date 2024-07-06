@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>GoIteens 2 semester</title>
+		<link
+			rel="stylesheet"
+			href="./output.css"
+		/>
+		<link
+			rel="shortcut icon"
+			href="./assets/logo.png"
+			type="image/x-icon"
+		/>
+	</head>
+	<body class="text-white min-h-screen font-ns overflow-x-hidden bg-[#0e0f0f]">
+		<header
+			class="py-6 px-10 flex justify-between items-center sticky top-0 left-0 w-full bg-[#0e0f0f]/40 backdrop-blur-3xl z-50 after:border after:border-solid after:border-border after:absolute after:bottom-0 after:left-0 after:w-full after:content-['']"
+		>
+			<a
+				href="./index.html"
+				class="font-medium lg:text-3xl md:text-2xl text-xl"
+				>Portfolio</a
+			>
+			<nav>
+				<ul class="hidden items-center gap-8 md:flex">
+					<li>
+						<a
+							href="#projects"
+							class="text-xl hover:text-primary transition-colors"
+							>Projects</a
+						>
+					</li>
+					<li>
+						<a
+							href="#homeWorks"
+							class="text-xl hover:text-primary transition-colors"
+							>Home Works</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section
+				class="py-48 relative z-10 after:absolute after:left-[25%] after:top-[20%] after:lg:w-72 after:lg:h-72 after:bg-gradient-radial after:from-brand-400 after:via-[#0e0f0f] after:to-transparent after:-z-10 after:blur-2xl after:md:w-60 after:md:h-60 after:sm:w-52 after:sm:h-52 after:w-44 after:h-44 px-10 flex items-center justify-center flex-col"
+			>
+				<h2
+					class="text-xl max-w-[250px] font-medium text-center mb-4 lg:text-5xl lg:max-w-[610px] md:max-w-[510px] md:text-4xl sm:text-2xl sm:max-w-[350px]"
+				>
+					Hello, i'm
+					<span class="text-horizonGreen-200 font-medium drop-shadow-2xl"
+						>Valera</span
+					>. I am a student<span class="text-primary"> of GoIteens</span>.
+				</h2>
+				<a
+					href="https://github.com/lovin4ik"
+					class="lg:text-base rounded-lg py-2 px-7 bg-transparent border border-solid border-horizonGreen-400 font-medium text-white duration-700 transition hover:bg-horizonGreen-400/75 hover:shadow-primary/30 active:bg-horizonGreen-400 shadow-2xl shadow-transparent overflow-hidden"
+					rel="noopener noreferrer"
+					target="_blank"
+					>My GitHub</a
+				>
+				<img
+					src="./assets/images/hero.svg"
+					alt="bg"
+					class="absolute hidden right-0 top-0 -z-20 lg:block"
+				/>
+			</section>
+			<section
+				class="py-12 px-10 flex items-center justify-center flex-col relative after:content-[''] after:absolute after:bg-gradient-radial after:from-horizonGreen-300 after:to-transparent after:top-0 after:left-1/4 after:-z-10 after:w-96 after:h-96 after:blur-3xl"
+			>
+				<h2
+					class="text-3xl font-medium mb-6"
+					id="projects"
+				>
+					Projects
+				</h2>
+
+				<ul
+					class="flex gap-10 flex-wrap items-center justify-center"
+					id="projectsList"
+				></ul>
+			</section>
+			<section
+				class="my-24 px-10 flex items-center justify-center flex-col"
+				id="homeWorks"
+			>
+				<h2 class="text-3xl font-medium mb-12">
+					Home Works <span class="text-xl text-border">&lt;/&gt;</span>
+				</h2>
+				<div class="flex gap-5 items-center">
+					<div
+						class="bg-white rounded-3xl w-52 sm:w-60 md:w-72 lg:w-96 h-3 overflow-hidden shadow-lg shadow-white/30 border border-solid border-border"
+						id="statistics"
+					></div>
+					<span
+						id="statistics-percent"
+						class="text-xl font-medium text-horizonGreen-400"
+						>0%</span
+					>
+				</div>
+				<ul
+					class="grid grid-cols-2 md:grid-cols-3 gap-8 mt-16 justify-center items-center"
+					id="homeWorks-list"
+				></ul>
+			</section>
+		</main>
+		<footer
+			class="relative py-6 after:absolute after:left-0 after:top-0 after:w-full after:border after:border-solid after:border-border after:-z-10 after:backdrop-blur-3xl"
+			id="Contacts"
+		>
+			<p class="text-center text-lg font-medium">Made with ❤️ by Valera</p>
+		</footer>
+		<script
+			type="module"
+			src="./main.js"
+		></script>
+	</body>
+</html>

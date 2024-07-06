@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>WebStudio</title>
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="../../output.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./css/style.css"
+		/>
+		<link
+			rel="shortcut icon"
+			href="../../assets/logo.png"
+			type="image/x-icon"
+		/>
+	</head>
+	<body class="min-h-screen font-roboto">
+		<header
+			class="sticky top-0 left-0 bg-white border-b border-solid border-[#ECECEC]"
+		>
+			<div class="wrapper mx-auto flex justify-between py-6 items-center">
+				<nav class="flex items-center">
+					<a
+						href="./webstudio.html"
+						class="mr-[93px] font-bold text-[26px]"
+						><span class="text-ws-blue font-raleway">Web</span>Studio</a
+					>
+					<ul class="hidden gap-[50px] items-center md:flex">
+						<li>
+							<a
+								href="./webstudio.html"
+								class="text-xs font-medium text-ws-blue relative after:content-[''] after:absolute after:w-full after:-bottom-[34px] after:left-0 after:h-[4px] after:bg-ws-blue after:rounded-sm tr >Студія</a"
+							>
+								Студія
+							</a>
+						</li>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="text-xs font-medium transition-colors ease-ws hover:text-ws-blue"
+								>Портфоліо</a
+							>
+						</li>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="text-xs font-medium transition-colors ease-ws hover:text-ws-blue"
+								>Контакти</a
+							>
+						</li>
+					</ul>
+				</nav>
+
+				<i
+					class="bx bx-menu text-black text-2xl w-10 h-10 flex items-center justify-center md:hidden cursor-pointer transition-colors ease-ws hover:text-ws-blue"
+					id="Burger"
+				></i>
+
+				<ul class="hidden gap-[30px] md:block lg:flex">
+					<li>
+						<a
+							href="mailto:info@devstudio.com"
+							class="flex gap-[10px] items-center text-ws-gray fill-ws-gray transition-colors ease-ws hover:text-ws-blue hover:fill-ws-blue"
+						>
+							<svg
+								width="16px"
+								height="12px"
+							>
+								<use xlink:href="./assets/sprite.svg#email"></use>
+							</svg>
+							info@devstudio.com
+						</a>
+					</li>
+					<li>
+						<a
+							href="tel:+380961111111"
+							class="flex gap-[10px] items-center text-ws-gray fill-ws-gray transition-colors ease-ws hover:text-ws-blue hover:fill-ws-blue"
+						>
+							<svg
+								width="16px"
+								height="12px"
+							>
+								<use xlink:href="./assets/sprite.svg#phone"></use>
+							</svg>
+							+38 096 111 11 11
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<main>
+			<section class="bg-ws-hero bg-1600 bg-no-repeat bg-center">
+				<div
+					class="wrapper mx-auto flex items-center justify-center flex-col py-[200px]"
+				>
+					<h1
+						class="uppercase font-black text-[26px] text-center text-white tracking-wider max-w-[360px] lg:text-[44px] lg:max-w-[696px] mb-[30px] leading-[60px]"
+					>
+						Ефективні рішення для вашого бізнесу
+					</h1>
+					<button
+						type="button"
+						class="py-[10px] px-6 rounded tracking-wider text-white text-[16px] font-bold bg-ws-blue shadow-[0px_4px_4px_0px_#00000026] lg:px-8 leading-[30px]"
+					>
+						Замовити послугу
+					</button>
+				</div>
+			</section>
+
+			<section class="my-[94px]">
+				<div class="wrapper mx-auto">
+					<ul class="flex gap-[30px] flex-wrap items-center justify-center">
+						<li class="w-[450px] md:w-[354px] lg:w-[270px]">
+							<div
+								class="w-full h-120px bg-ws-light flex items-center justify-center py-[25px] mb-[30px]"
+							>
+								<img
+									src="./assets/antenna.svg"
+									alt="antenna"
+								/>
+							</div>
+							<h3
+								class="text-[14px] font-bold text-ws-dark uppercase mb-[10px] leading-[16.41px] tracking-wider"
+							>
+								Увага до деталей
+							</h3>
+							<p
+								class="text-ws-gray w-full text-[14px] leading-[24px] font-normal"
+							>
+								Ідейні міркування, і навіть початок повсякденної роботи з
+								формування позиції.
+							</p>
+						</li>
+						<li class="w-[450px] md:w-[354px] lg:w-[270px]">
+							<div
+								class="w-full h-120px bg-ws-light flex items-center justify-center py-[25px] mb-[30px]"
+							>
+								<img
+									src="./assets/clock.svg"
+									alt="clock"
+								/>
+							</div>
+							<h3
+								class="text-[14px] font-bold text-ws-dark uppercase mb-[10px] leading-[16.41px] tracking-wider"
+							>
+								Пунктуальність
+							</h3>
+							<p
+								class="text-ws-gray w-full text-[14px] leading-[24px] font-normal"
+							>
+								Завдання організації, особливо рамки і місце навчання кадрів
+								тягне у себе.
+							</p>
+						</li>
+						<li class="w-[450px] md:w-[354px] lg:w-[270px]">
+							<div
+								class="w-full h-120px bg-ws-light flex items-center justify-center py-[25px] mb-[30px]"
+							>
+								<img
+									src="./assets/diagram.svg"
+									alt="diagram"
+								/>
+							</div>
+							<h3
+								class="text-[14px] font-bold text-ws-dark uppercase mb-[10px] leading-[16.41px] tracking-wider"
+							>
+								Планування
+							</h3>
+							<p
+								class="text-ws-gray w-full text-[14px] leading-[24px] font-normal"
+							>
+								Так само консультація з широким активом значною мірою зумовлює.
+							</p>
+						</li>
+						<li class="w-[450px] md:w-[354px] lg:w-[270px]">
+							<div
+								class="w-full h-120px bg-ws-light flex items-center justify-center py-[25px] mb-[30px]"
+							>
+								<img
+									src="./assets/astronaut.svg"
+									alt="astronaut"
+								/>
+							</div>
+							<h3
+								class="text-[14px] font-bold text-ws-dark uppercase mb-[10px] leading-[16.41px] tracking-wider"
+							>
+								Сучасні технології
+							</h3>
+							<p
+								class="text-ws-gray w-full text-[14px] leading-[24px] font-normal"
+							>
+								Значимість цих проблем настільки очевидна, що реалізація
+								планових завдань.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="hidden mb-[94px] lg:block">
+				<div class="wrapper mx-auto flex flex-col items-center justify-center">
+					<h2
+						class="text-ws-dark text-[42px] font-bold tracking-wider mb-[50px]"
+					>
+						Чим ми займаємося
+					</h2>
+					<ul class="hidden md:flex gap-[30px]">
+						<li>
+							<img
+								src="./assets/laptop.png"
+								alt="computer"
+								width="370"
+							/>
+						</li>
+						<li>
+							<img
+								src="./assets/mobile.png"
+								alt="phone"
+								width="370"
+							/>
+						</li>
+						<li>
+							<img
+								src="./assets/tablet.png"
+								alt="tablet"
+								width="370"
+							/>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="py-[94px] bg-ws-light">
+				<div class="wrapper mx-auto flex flex-col items-center justify-center">
+					<h2 class="text-ws-dark text-[36px] font-bold mb-[50px]">
+						Наша команда
+					</h2>
+					<ul class="flex gap-[30px] flex-wrap items-center justify-center">
+						<li
+							class="bg-white pb-[30px] rounded-b shadow shadow-[0px_2px 1px_0px_#00000033, 0px_1px_1px_0px_#00000024, 0px_1px_3px 0px_#0000001F] w-[450px] md:w-[354px] lg:w-[270px]"
+						>
+							<img
+								src="./assets/igor.jpg"
+								alt="Igor"
+								class="w-full"
+							/>
+							<h3
+								class="font-medium text-ws-dark text-[16px] leading-[18.75px] text-center mt-[30px] mb-[10px]"
+							>
+								Ігор Дем'яненко
+							</h3>
+							<p
+								class="text-ws-gray text-[16px] leading-[18.75px] text-center mb-[16px]"
+							>
+								Product Designer
+							</p>
+							<ul class="flex gap-[10px] items-center justify-center flex-wrap">
+								<li>
+									<a
+										href="./webstudio.html"
+										class="w-11 h-11 rounded-full bg-transparent text-ws-gray flex items-center justify-center transition-colors ease-ws hover:bg-ws-blue hover:text-white"
+										><i class="bx bxl-instagram"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="w-11 h-11 rounded-full bg-transparent text-ws-gray flex items-center justify-center transition-colors ease-ws hover:bg-ws-blue hover:text-white"
+										><i class="bx bxl-twitter"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="w-11 h-11 rounded-full bg-transparent text-ws-gray flex items-center justify-center transition-colors ease-ws hover:bg-ws-blue hover:text-white"
+										><i class="bx bxl-facebook"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="w-11 h-11 rounded-full bg-transparent text-ws-gray flex items-center justify-center transition-colors ease-ws hover:bg-ws-blue hover:text-white"
+										><i class="bx bxl-linkedin"></i
+									></a>
+								</li>
+							</ul>
+						</li>
+						<li
+							class="bg-white pb-[30px] rounded-b shadow shadow-[0px_2px 1px_0px_#00000033, 0px_1px_1px_0px_#00000024, 0px_1px_3px 0px_#0000001F] w-[450px] md:w-[354px] lg:w-[270px]"
+						>
+							<img
+								src="./assets/olga.jpg"
+								alt="Olga"
+								class="w-full"
+							/>
+							<h3
+								class="font-medium text-ws-dark text-[16px] leading-[18.75px] text-center mt-[30px] mb-[10px]"
+							>
+								Ольга Рєпіна
+							</h3>
+							<p
+								class="text-ws-gray text-[16px] leading-[18.75px] text-center mb-[16px]"
+							>
+								Frontend Developer
+							</p>
+							<ul class="flex gap-[10px] items-center justify-center flex-wrap">
+								<li>
+									<a
+										href="./webstudio.html"
+										class="w-11 h-11 rounded-full bg-transparent text-ws-gray flex items-center justify-center transition-colors ease-ws hover:bg-ws-blue hover:text-white"
+										><i class="bx bxl-instagram"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="w-11 h-11 rounded-full bg-transparent text-ws-gray flex items-center justify-center transition-colors ease-ws hover:bg-ws-blue hover:text-white"
+										><i class="bx bxl-twitter"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="w-11 h-11 rounded-full bg-transparent text-ws-gray flex items-center justify-center transition-colors ease-ws hover:bg-ws-blue hover:text-white"
+										><i class="bx bxl-facebook"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="w-11 h-11 rounded-full bg-transparent text-ws-gray flex items-center justify-center transition-colors ease-ws hover:bg-ws-blue hover:text-white"
+										><i class="bx bxl-linkedin"></i
+									></a>
+								</li>
+							</ul>
+						</li>
+						<li
+							class="bg-white pb-[30px] rounded-b shadow shadow-[0px_2px 1px_0px_#00000033, 0px_1px_1px_0px_#00000024, 0px_1px_3px 0px_#0000001F] w-[450px] md:w-[354px] lg:w-[270px]"
+						>
+							<img
+								src="./assets/mykola.jpg"
+								alt="Mykola"
+								class="w-full"
+							/>
+							<h3
+								class="font-medium text-ws-dark text-[16px] leading-[18.75px] text-center mt-[30px] mb-[10px]"
+							>
+								Миколай Тарасов
+							</h3>
+							<p
+								class="text-ws-gray text-[16px] leading-[18.75px] text-center mb-[16px]"
+							>
+								Marketing
+							</p>
+							<ul class="flex gap-[10px] items-center justify-center flex-wrap">
+								<li>
+									<a
+										href="./webstudio.html"
+										class="w-11 h-11 rounded-full bg-transparent text-ws-gray flex items-center justify-center transition-colors ease-ws hover:bg-ws-blue hover:text-white"
+										><i class="bx bxl-instagram"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="w-11 h-11 rounded-full bg-transparent text-ws-gray flex items-center justify-center transition-colors ease-ws hover:bg-ws-blue hover:text-white"
+										><i class="bx bxl-twitter"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="w-11 h-11 rounded-full bg-transparent text-ws-gray flex items-center justify-center transition-colors ease-ws hover:bg-ws-blue hover:text-white"
+										><i class="bx bxl-facebook"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="w-11 h-11 rounded-full bg-transparent text-ws-gray flex items-center justify-center transition-colors ease-ws hover:bg-ws-blue hover:text-white"
+										><i class="bx bxl-linkedin"></i
+									></a>
+								</li>
+							</ul>
+						</li>
+						<li
+							class="bg-white pb-[30px] rounded-b shadow shadow-[0px_2px 1px_0px_#00000033, 0px_1px_1px_0px_#00000024, 0px_1px_3px 0px_#0000001F] w-[450px] md:w-[354px] lg:w-[270px]"
+						>
+							<img
+								src="./assets/mykhailo.jpg"
+								alt="Mykhailo"
+								class="w-full"
+							/>
+							<h3
+								class="font-medium text-ws-dark text-[16px] leading-[18.75px] text-center mt-[30px] mb-[10px]"
+							>
+								Михаил Ермаков
+							</h3>
+							<p
+								class="text-ws-gray text-[16px] leading-[18.75px] text-center mb-[16px]"
+							>
+								UI Designer
+							</p>
+							<ul class="flex gap-[10px] items-center justify-center flex-wrap">
+								<li>
+									<a
+										href="./webstudio.html"
+										class="w-11 h-11 rounded-full bg-transparent text-ws-gray flex items-center justify-center transition-colors ease-ws hover:bg-ws-blue hover:text-white"
+										><i class="bx bxl-instagram"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="w-11 h-11 rounded-full bg-transparent text-ws-gray flex items-center justify-center transition-colors ease-ws hover:bg-ws-blue hover:text-white"
+										><i class="bx bxl-twitter"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="w-11 h-11 rounded-full bg-transparent text-ws-gray flex items-center justify-center transition-colors ease-ws hover:bg-ws-blue hover:text-white"
+										><i class="bx bxl-facebook"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="w-11 h-11 rounded-full bg-transparent text-ws-gray flex items-center justify-center transition-colors ease-ws hover:bg-ws-blue hover:text-white"
+										><i class="bx bxl-linkedin"></i
+									></a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="my-[94px]">
+				<div class="wrapper mx-auto flex items-center justify-center flex-col">
+					<h2
+						class="text-ws-dark text-[36px] leading-[42px] font-bold mb-[50px]"
+					>
+						Постійні клієнти
+					</h2>
+					<ul
+						class="flex flex-wrap lg:flex-nowrap gap-[30px] items-center justify-center"
+					>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="border border-solid border-[#AFB1B8] px-[85px] py-[25px] md:px-[91px] md:py-[21px] lg:px-[64px] lg:py-[24px] rounded fill-[#AFB1B8] flex items-center justify-center transition-colors ease-ws hover:border-ws-blue hover:fill-ws-blue"
+							>
+								<svg
+									width="41px"
+									height="46px"
+								>
+									<use xlink:href="./assets/sprite.svg#yaigo"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="border border-solid border-[#AFB1B8] px-[85px] py-[25px] md:px-[91px] md:py-[21px] lg:px-[64px] lg:py-[24px] rounded fill-[#AFB1B8] flex items-center justify-center transition-colors ease-ws hover:border-ws-blue hover:fill-ws-blue"
+							>
+								<svg
+									width="41px"
+									height="46px"
+								>
+									<use xlink:href="./assets/sprite.svg#book"></use></svg
+							></a>
+						</li>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="border border-solid border-[#AFB1B8] px-[85px] py-[25px] md:px-[91px] md:py-[21px] lg:px-[64px] lg:py-[24px] rounded fill-[#AFB1B8] flex items-center justify-center transition-colors ease-ws hover:border-ws-blue hover:fill-ws-blue"
+							>
+								<svg
+									width="41px"
+									height="46px"
+								>
+									<use xlink:href="./assets/sprite.svg#company"></use></svg
+							></a>
+						</li>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="border border-solid border-[#AFB1B8] px-[65px] py-[25px] md:px-[70px] md:py-[21px] lg:px-[42px] lg:py-[24px] rounded fill-[#AFB1B8] flex items-center justify-center transition-colors ease-ws hover:border-ws-blue hover:fill-ws-blue"
+							>
+								<svg
+									width="84px"
+									height="46px"
+								>
+									<use xlink:href="./assets/sprite.svg#foster"></use></svg
+							></a>
+						</li>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="border border-solid border-[#AFB1B8] px-[85px] py-[25px] md:px-[91px] md:py-[21px] lg:px-[64px] lg:py-[24px] rounded fill-[#AFB1B8] flex items-center justify-center transition-colors ease-ws hover:border-ws-blue hover:fill-ws-blue"
+							>
+								<svg
+									width="41px"
+									height="46px"
+								>
+									<use xlink:href="./assets/sprite.svg#brand"></use></svg
+							></a>
+						</li>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="border border-solid border-[#AFB1B8] px-[85px] py-[25px] md:px-[91px] md:py-[21px] lg:px-[64px] lg:py-[24px] rounded fill-[#AFB1B8] flex items-center justify-center transition-colors ease-ws hover:border-ws-blue hover:fill-ws-blue"
+							>
+								<svg
+									width="41px"
+									height="46px"
+								>
+									<use xlink:href="./assets/sprite.svg#tagline"></use></svg
+							></a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="bg-ws-gb text-white">
+			<div
+				class="wrapper mx-auto flex flex-col flex-wrap items-center justify-center py-[60px] lg:flex-nowrap md:flex-row"
+			>
+				<address class="w-[231px]">
+					<a
+						href="./webstudio.html"
+						class="text-white text-[24px] font-bold leading-[28.18px] text-center block mb-[20px] lg:text-start"
+					>
+						<span class="text-ws-blue font-raleway">Web</span>Studio
+					</a>
+					<ul class="flex flex-col gap-2 items-center lg:items-start">
+						<li>
+							<a
+								href="./webstudio.html"
+								class="text-white text-[14px]"
+							>
+								м. Київ, пр-т Лесі Українки, 26
+							</a>
+						</li>
+						<li>
+							<a
+								href="mailto:info@devstudio.com"
+								class="text-[#FFFFFF99] text-[14px]"
+							>
+								info@devstudio.com
+							</a>
+						</li>
+						<li>
+							<a
+								href="tel:+380961111111"
+								class="text-[#FFFFFF99] text-[14px]"
+							>
+								+38 096 111 11 11
+							</a>
+						</li>
+					</ul>
+				</address>
+
+				<div
+					class="mt-[60px] md:mt-0 md:ml-[165px] lg:inline-block lg:ml-[70px]"
+				>
+					<p
+						class="text-[14px] uppercase font-bold tracking-wider mb-[20px] text-center lg:text-left"
+					>
+						Приєднуйтесь
+					</p>
+					<ul class="flex gap-[10px]">
+						<li>
+							<a
+								href="./webstudio.html"
+								class="bg-[#FFFFFF1A] rounded-full p-[12px] flex items-center justify-center transition-colors ease-ws hover:bg-ws-blue"
+								><i class="bx bxl-instagram"></i
+							></a>
+						</li>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="bg-[#FFFFFF1A] rounded-full p-[12px] flex items-center justify-center transition-colors ease-ws hover:bg-ws-blue"
+								><i class="bx bxl-twitter"></i
+							></a>
+						</li>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="bg-[#FFFFFF1A] rounded-full p-[12px] flex items-center justify-center transition-colors ease-ws hover:bg-ws-blue"
+								><i class="bx bxl-facebook"></i
+							></a>
+						</li>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="bg-[#FFFFFF1A] rounded-full p-[12px] flex items-center justify-center transition-colors ease-ws hover:bg-ws-blue"
+								><i class="bx bxl-linkedin"></i
+							></a>
+						</li>
+					</ul>
+				</div>
+				<div
+					class="mt-[60px] flex items-center justify-center flex-col lg:inline-block lg:ml-[93px] lg:mt-0"
+				>
+					<p
+						class="text-[14px] leading-[16.41px] font-bold uppercase mb-[20px] tracking-wider"
+					>
+						Підпишіться на розсилку
+					</p>
+					<form
+						class="flex flex-col items-center justify-center w-[450px] lg:flex-row lg:w-[570px] lg:justify-start"
+						action="#"
+						method="post"
+					>
+						<input
+							class="bg-transparent border border-solid border-[#FFFFFF4D] rounded px-[16px] py-[12px] w-full mb-[20px] outline-none transition-colors ease-ws hover:border-ws-blue focus:border-ws-blue placeholder:text-[#FFFFFF99] lg:w-[358px] lg:mb-0 lg:mr-[12px]"
+							type="email"
+							name="email"
+							placeholder="E-mail"
+						/>
+						<button
+							class="flex gap-[10px] bg-ws-blue px-[28px] py-[13px] rounded text-white fill-white font-bold text-[16px]"
+							type="submit"
+						>
+							Підписатися
+							<svg
+								width="24px"
+								height="24px"
+							>
+								<use xlink:href="./assets/sprite.svg#tg"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

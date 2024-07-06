@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>WebStudio</title>
+		<link
+			rel="stylesheet"
+			href="./css/main.min.css"
+		/>
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<script
+			type="module"
+			src="./js/modal.js"
+			defer
+		></script>
+		<script
+			type="module"
+			src="./js/burgerMenu.js"
+			defer
+		></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<nav>
+					<a
+						href="./webstudio.html"
+						class="header__logo"
+						><span>Web</span>Studio</a
+					>
+					<ul class="header__nav">
+						<li>
+							<a
+								href="./webstudio.html"
+								class="header__nav__link active"
+								>Студія</a
+							>
+						</li>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="header__nav__link"
+								>Портфоліо</a
+							>
+						</li>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="header__nav__link"
+								>Контакти</a
+							>
+						</li>
+					</ul>
+				</nav>
+
+				<i class="bx bx-menu header__burger"></i>
+
+				<ul class="header__contacts">
+					<li>
+						<a
+							href="mailto:info@devstudio.com"
+							class="header__contacts__link"
+						>
+							<svg
+								class="icon"
+								width="14px"
+								height="10px"
+							>
+								<use xlink:href="./assets/sprite.svg#email"></use>
+							</svg>
+							info@devstudio.com
+						</a>
+					</li>
+					<li>
+						<a
+							href="tel:+380961111111"
+							class="header__contacts__link"
+						>
+							<svg
+								class="icon"
+								width="10px"
+								height="16px"
+							>
+								<use xlink:href="./assets/sprite.svg#phone"></use>
+							</svg>
+							+38 096 111 11 11
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="container">
+					<h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+					<button
+						type="button"
+						class="hero__button"
+						id="open-modal"
+					>
+						Замовити послугу
+					</button>
+				</div>
+			</section>
+
+			<section class="info">
+				<div class="container">
+					<ul class="info__list">
+						<li>
+							<div class="info__list__icon">
+								<img
+									src="./assets/antenna.svg"
+									alt="antenna"
+								/>
+							</div>
+							<h3 class="info__list__title">Увага до деталей</h3>
+							<p class="info__list__text">
+								Ідеальний дизайнерський проект - це означає чіткість,
+								пунктуальність і гарантування повноти.
+							</p>
+						</li>
+						<li>
+							<div class="info__list__icon">
+								<img
+									src="./assets/clock.svg"
+									alt="clock"
+								/>
+							</div>
+							<h3 class="info__list__title">Пунктуальність</h3>
+							<p class="info__list__text">
+								Завдання організації, особливо рамки і місце навчання кадрів
+								тягне у себе.
+							</p>
+						</li>
+						<li>
+							<div class="info__list__icon">
+								<img
+									src="./assets/diagram.svg"
+									alt="diagram"
+								/>
+							</div>
+							<h3 class="info__list__title">Планування</h3>
+							<p class="info__list__text">
+								Так само консультація з широким активом показує, що реалізація
+								планових завдань.
+							</p>
+						</li>
+						<li>
+							<div class="info__list__icon">
+								<img
+									src="./assets/astronaut.svg"
+									alt="astronaut"
+								/>
+							</div>
+							<h3 class="info__list__title">Сучасні технології</h3>
+							<p class="info__list__text">
+								Значимість цих проблем настільки очевидна, що реалізація
+								планових завдань.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="work">
+				<div class="container">
+					<h2 class="work__title">Чим ми займаємося</h2>
+					<ul class="work__list">
+						<li>
+							<img
+								src="./assets/laptop.png"
+								alt="computer"
+								width="370"
+							/>
+						</li>
+						<li>
+							<img
+								src="./assets/mobile.png"
+								alt="phone"
+								width="370"
+							/>
+						</li>
+						<li>
+							<img
+								src="./assets/tablet.png"
+								alt="tablet"
+								width="370"
+							/>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="team">
+				<div class="container">
+					<h2 class="team__title">Наша команда</h2>
+					<ul class="team__list">
+						<li>
+							<img
+								src="./assets/igor.jpg"
+								alt="Igor"
+							/>
+							<h3 class="team__list__title">Ігор Дем'яненко</h3>
+							<p class="team__list__text">Product Designer</p>
+							<ul class="team__list__social">
+								<li>
+									<a
+										href="./webstudio.html"
+										class="team__list__social__link"
+										><i class="bx bxl-instagram"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="team__list__social__link"
+										><i class="bx bxl-twitter"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="team__list__social__link"
+										><i class="bx bxl-facebook"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="team__list__social__link"
+										><i class="bx bxl-linkedin"></i
+									></a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<img
+								src="./assets/olga.jpg"
+								alt="Olga"
+							/>
+							<h3 class="team__list__title">Ольга Рєпіна</h3>
+							<p class="team__list__text">Frontend Developer</p>
+							<ul class="team__list__social">
+								<li>
+									<a
+										href="./webstudio.html"
+										class="team__list__social__link"
+										><i class="bx bxl-instagram"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="team__list__social__link"
+										><i class="bx bxl-twitter"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="team__list__social__link"
+										><i class="bx bxl-facebook"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="team__list__social__link"
+										><i class="bx bxl-linkedin"></i
+									></a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<img
+								src="./assets/mykola.jpg"
+								alt="Mykola"
+							/>
+							<h3 class="team__list__title">Миколай Тарасов</h3>
+							<p class="team__list__text">Marketing</p>
+							<ul class="team__list__social">
+								<li>
+									<a
+										href="./webstudio.html"
+										class="team__list__social__link"
+										><i class="bx bxl-instagram"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="team__list__social__link"
+										><i class="bx bxl-twitter"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="team__list__social__link"
+										><i class="bx bxl-facebook"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="team__list__social__link"
+										><i class="bx bxl-linkedin"></i
+									></a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<img
+								src="./assets/mykhailo.jpg"
+								alt="Mykhailo"
+							/>
+							<h3 class="team__list__title">Михаил Ермаков</h3>
+							<p class="team__list__text">UI Designer</p>
+							<ul class="team__list__social">
+								<li>
+									<a
+										href="./webstudio.html"
+										class="team__list__social__link"
+										><i class="bx bxl-instagram"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="team__list__social__link"
+										><i class="bx bxl-twitter"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="team__list__social__link"
+										><i class="bx bxl-facebook"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="./webstudio.html"
+										class="team__list__social__link"
+										><i class="bx bxl-linkedin"></i
+									></a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="clients">
+				<div class="container">
+					<h2 class="clients__title">Постійні клієнти</h2>
+					<ul class="clients__list">
+						<li>
+							<a
+								href="./webstudio.html"
+								class="clients__list__link"
+							>
+								<svg
+									class="icon"
+									width="41px"
+									height="46px"
+								>
+									<use xlink:href="./assets/sprite.svg#yaigo"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="clients__list__link"
+							>
+								<svg
+									class="icon"
+									width="41px"
+									height="46px"
+								>
+									<use xlink:href="./assets/sprite.svg#book"></use></svg
+							></a>
+						</li>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="clients__list__link"
+							>
+								<svg
+									class="icon"
+									width="41px"
+									height="46px"
+								>
+									<use xlink:href="./assets/sprite.svg#company"></use></svg
+							></a>
+						</li>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="clients__list__link"
+							>
+								<svg
+									class="icon"
+									width="84px"
+									height="40px"
+								>
+									<use xlink:href="./assets/sprite.svg#foster"></use></svg
+							></a>
+						</li>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="clients__list__link"
+							>
+								<svg
+									class="icon"
+									width="41px"
+									height="46px"
+								>
+									<use xlink:href="./assets/sprite.svg#brand"></use></svg
+							></a>
+						</li>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="clients__list__link"
+							>
+								<svg
+									class="icon"
+									width="41px"
+									height="46px"
+								>
+									<use xlink:href="./assets/sprite.svg#tagline"></use></svg
+							></a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<address class="footer__address">
+					<a
+						href="./webstudio.html"
+						class="footer__logo"
+					>
+						Web<span class="footer__logo--white">Studio</span>
+					</a>
+					<ul class="footer__list">
+						<li>
+							<a
+								href="./webstudio.html"
+								class="footer__list__link white"
+							>
+								м. Київ, пр-т Лесі Українки, 26
+							</a>
+						</li>
+						<li>
+							<a
+								href="mailto:info@devstudio.com"
+								class="footer__list__link"
+							>
+								info@devstudio.com
+							</a>
+						</li>
+						<li>
+							<a
+								href="tel:+380961111111"
+								class="footer__list__link"
+							>
+								+38 096 111 11 11
+							</a>
+						</li>
+					</ul>
+				</address>
+
+				<div class="footer__social">
+					<p class="footer__social__title">Приєднуйтесь</p>
+					<ul class="footer__social__list">
+						<li>
+							<a
+								href="./webstudio.html"
+								class="footer__social__link"
+								><i class="bx bxl-instagram"></i
+							></a>
+						</li>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="footer__social__link"
+								><i class="bx bxl-twitter"></i
+							></a>
+						</li>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="footer__social__link"
+								><i class="bx bxl-facebook"></i
+							></a>
+						</li>
+						<li>
+							<a
+								href="./webstudio.html"
+								class="footer__social__link"
+								><i class="bx bxl-linkedin"></i
+							></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__subscribe">
+					<h3 class="footer__subscribe__title">Підпишіться на розсилку</h3>
+					<form
+						class="footer__subscribe__form"
+						action="#"
+						method="post"
+					>
+						<input
+							class="footer__subscribe__input"
+							type="email"
+							name="email"
+							placeholder="E-mail"
+						/>
+						<button
+							class="footer__subscribe__button"
+							type="submit"
+						>
+							Підписатися
+							<svg
+								class="icon"
+								width="24px"
+								height="24px"
+							>
+								<use xlink:href="./assets/sprite.svg#tg"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+			</div>
+		</footer>
+		<div class="backdrop is-hidden">
+			<div class="modal">
+				<h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+				<button
+					type="button"
+					class="modal__close"
+					id="modal-close"
+				>
+					<svg
+						class="icon"
+						width="11px"
+						height="11px"
+					>
+						<use xlink:href="./assets/sprite.svg#close"></use>
+					</svg>
+				</button>
+				<form class="modal__form">
+					<div class="modal__form__wrapper">
+						<label
+							for="name"
+							class="modal__form__label"
+							>Ім'я</label
+						>
+						<input
+							type="text"
+							id="name"
+							class="modal__form__input"
+							required
+						/>
+						<i class="bx bxs-user modal__form__icon"></i>
+					</div>
+					<div class="modal__form__wrapper">
+						<label
+							for="phone"
+							class="modal__form__label"
+							>Телефон</label
+						>
+						<input
+							type="tel"
+							id="phone"
+							class="modal__form__input"
+							required
+						/>
+						<svg
+							width="18px"
+							height="18px"
+							class="modal__form__icon"
+						>
+							<use xlink:href="./assets/sprite.svg#phone-modal"></use>
+						</svg>
+					</div>
+					<div class="modal__form__wrapper">
+						<label
+							for="email"
+							class="modal__form__label"
+							>Пошта</label
+						>
+						<input
+							type="email"
+							id="email"
+							class="modal__form__input"
+							required
+						/>
+						<i class="bx bxs-envelope modal__form__icon"></i>
+					</div>
+					<div class="modal__form__wrapper">
+						<label
+							for="comment"
+							class="modal__form__label"
+							>Коментар</label
+						>
+						<textarea
+							id="comment"
+							cols="30"
+							rows="10"
+							class="modal__form__textarea"
+							placeholder="Введіть текст"
+						></textarea>
+					</div>
+					<div class="modal__form__checkbox">
+						<input type="checkbox" /><span
+							>Погоджуюся з розсилкою та приймаю
+							<a href="./webstudio.html">Умови договору</a></span
+						>
+					</div>
+					<button
+						class="modal__form__button"
+						type="submit"
+					>
+						Відправити
+					</button>
+				</form>
+			</div>
+		</div>
+		<div class="burger__menu is-hidden">
+			<button class="burger__menu__close">
+				<svg
+					class="icon"
+					width="18px"
+					height="18px"
+				>
+					<use xlink:href="./assets/sprite.svg#close"></use>
+				</svg>
+			</button>
+			<ul class="burger__menu__list">
+				<li class="burger__menu__item">
+					<a
+						href="./webstudio.html"
+						class="burger__menu__link"
+						>Студія</a
+					>
+				</li>
+				<li class="burger__menu__item">
+					<a
+						href="./portfolio.html"
+						class="burger__menu__link"
+						>Портфоліо</a
+					>
+				</li>
+				<li class="burger__menu__item">
+					<a
+						href="./webstudio.html"
+						class="burger__menu__link"
+						>Контакти</a
+					>
+				</li>
+			</ul>
+			<ul class="burger__menu__contacts">
+				<li class="burger__menu__contact">
+					<a
+						href="tel:+380961111111"
+						class="burger__menu__link"
+						>+38 096 111 11 11</a
+					>
+				</li>
+				<li class="burger__menu__contact">
+					<a
+						href="mailto:info@devstudio.com"
+						class="burger__menu__link"
+						>info@devstudio.com</a
+					>
+				</li>
+			</ul>
+			<ul class="burger__menu__socials">
+				<li class="burger__menu__social">
+					<a
+						href="./webstudio.html"
+						class="burger__menu__link"
+						>Instagram</a
+					>
+				</li>
+				<li class="burger__menu__social">
+					<a
+						href="./webstudio.html"
+						class="burger__menu__link"
+						>Twitter</a
+					>
+				</li>
+				<li class="burger__menu__social">
+					<a
+						href="./webstudio.html"
+						class="burger__menu__link"
+						>Facebook</a
+					>
+				</li>
+				<li class="burger__menu__social">
+					<a
+						href="./webstudio.html"
+						class="burger__menu__link"
+						>LinkedIn</a
+					>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

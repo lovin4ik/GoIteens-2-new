@@ -1,0 +1,19 @@
+@import './base/reset';
+@import './utils/colors';
+@import './utils/fonts';
+@import './components/all';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/info';
+@import './layout/work';
+@import './layout/team';
+@import './layout/clients';
+
+@import './layout/footer';
+
+@import './layout/modal';
+@import './layout/burger';
+// * {
+// 	outline: 1px solid red;
+// }
