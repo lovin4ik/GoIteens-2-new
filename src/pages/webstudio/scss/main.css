@@ -8,9 +8,14 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 li {
@@ -57,6 +62,7 @@ button {
   background-color: #ffffff;
   z-index: 1;
   left: 0;
+  padding: 0 15px;
 }
 .header > .container {
   display: flex;
@@ -189,14 +195,14 @@ button {
 }
 @media screen and (max-width: 1169px) {
   .hero {
-    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../assets/hero-bg-md.png");
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../assets/hero-bg-md.png");
     background-size: 768px 400px, 768px 400px;
     padding: 118px 0;
   }
 }
 @media screen and (max-width: 767px) {
   .hero {
-    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../assets/hero-bg-sm.png");
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../assets/hero-bg-sm.png");
     background-size: 480px 400px, 480px 400px;
     padding: 118px 0;
   }
@@ -250,7 +256,6 @@ button {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
   gap: 30px;
 }
 .info__list > li {
@@ -490,6 +495,134 @@ button {
     width: 210px;
   }
 }
+.portfolio {
+  margin: 94px 0;
+}
+.portfolio > .container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+.portfolio__sort {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.portfolio__sort__btn {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  padding: 6px 22px;
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio__sort__btn:hover, .portfolio__sort__btn:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .portfolio__sort {
+    justify-content: start;
+  }
+}
+.portfolio__list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 1169px) {
+  .portfolio__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio__list {
+    place-items: center;
+    grid-template-columns: 1fr;
+  }
+}
+.portfolio__list > li {
+  width: 370px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #eeeeee;
+}
+@media screen and (max-width: 1169px) {
+  .portfolio__list > li {
+    width: 354px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio__list > li {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .portfolio__list > li {
+    width: calc(100vw - 30px);
+  }
+}
+.portfolio__list > li:hover, .portfolio__list > li:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio__list > li:hover > a > .overlay::after, .portfolio__list > li:focus > a > .overlay::after {
+  transform: translateY(0);
+}
+.portfolio__list > li > a {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio__list > li > a > .overlay {
+  height: 294px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio__list > li > a > .overlay > img {
+  width: 100%;
+  height: 100%;
+}
+.portfolio__list > li > a > .overlay::after {
+  content: "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  color: #fff;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  background: rgba(33, 150, 243, 0.9);
+  opacity: 1;
+  transform: translateY(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio__list > li > a > .portfolio__list__text {
+  padding: 20px 24px;
+}
+.portfolio__list > li > a > .portfolio__list__text > h3 {
+  color: #212121;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 4px;
+}
+.portfolio__list > li > a > .portfolio__list__text > p {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
 .footer {
   background-color: #2f303a;
   padding: 60px 0;
@@ -597,6 +730,12 @@ button {
 }
 .footer__subscribe__input:focus, .footer__subscribe__input:hover {
   border: 1px solid #2196f3;
+}
+.footer__subscribe__input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer__subscribe__input::placeholder {
   font-size: 16px;

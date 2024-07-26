@@ -1,0 +1,86 @@
+@mixin portFolioBtn() {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 26px;
+	padding: 6px 22px;
+	border-radius: 4px;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover,
+	&:focus {
+		background-color: $color-blue;
+		color: $color-white;
+	}
+}
+@mixin porfolioCard {
+	width: 370px;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	@media screen and (max-width: 1169px) {
+		width: 354px;
+	}
+	@media screen and (max-width: 767px) {
+		width: 450px;
+	}
+	@media screen and (max-width: 450px) {
+		width: calc(100vw - 30px);
+	}
+	border: 1px solid #eeeeee;
+	&:hover,
+	&:focus {
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+			1px 4px 6px rgba(0, 0, 0, 0.16);
+		> a > .overlay::after {
+			transform: translateY(0);
+		}
+	}
+	> a {
+		transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+		> .overlay {
+			height: 294px;
+			width: 100%;
+			position: relative;
+			overflow: hidden;
+			transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+			> img {
+				width: 100%;
+				height: 100%;
+			}
+			&::after {
+				content: 'Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 100%;
+				color: #fff;
+				padding: 0 24px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 28px;
+				background: rgba(33, 150, 243, 0.9);
+				opacity: 1;
+				transform: translateY(100%);
+				transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+			}
+		}
+		> .portfolio__list__text {
+			padding: 20px 24px;
+			> h3 {
+				color: $color-dark;
+				font-size: 18px;
+				font-weight: 700;
+				line-height: 36px;
+				margin-bottom: 4px;
+			}
+			> p {
+				color: $color-gray;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 30px;
+			}
+		}
+	}
+}

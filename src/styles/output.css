@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 /*
-! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.6 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -804,8 +804,8 @@ video {
   max-width: 12rem;
 }
 
-.max-w-\[1100px\]{
-  max-width: 1100px;
+.max-w-\[1300px\]{
+  max-width: 1300px;
 }
 
 .max-w-\[250px\]{
@@ -814,26 +814,6 @@ video {
 
 .max-w-\[360px\]{
   max-width: 360px;
-}
-
-.max-w-\[1200px\]{
-  max-width: 1200px;
-}
-
-.max-w-\[1260px\]{
-  max-width: 1260px;
-}
-
-.max-w-\[1263px\]{
-  max-width: 1263px;
-}
-
-.max-w-\[1262px\]{
-  max-width: 1262px;
-}
-
-.max-w-\[1300px\]{
-  max-width: 1300px;
 }
 
 .cursor-pointer{
@@ -890,10 +870,6 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
-}
-
-.overflow-x-hidden{
-  overflow-x: hidden;
 }
 
 .rounded{
@@ -1018,18 +994,12 @@ video {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
 
-.bg-ws-hero{
-  background-image: linear-gradient(0deg, #2f303a66, #2f303a66), url('../../pages/webstudio-tw/assets/hero-bg.png');
+.bg-\[url\(\'\.\.\/\.\.\/src\/pages\/webstudio\/assets\/hero-bg\.png\'\)\]{
+  background-image: url('../../src/pages/webstudio/assets/hero-bg.png');
 }
 
-.from-darkSecondary{
-  --tw-gradient-from: #1a191f var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(26 25 31 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-darkSecondary\/50{
-  --tw-gradient-from: rgb(26 25 31 / 0.5) var(--tw-gradient-from-position);
+.from-darkSecondary\/70{
+  --tw-gradient-from: rgb(26 25 31 / 0.7) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(26 25 31 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
@@ -1040,46 +1010,13 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-darkSecondary\/10{
-  --tw-gradient-from: rgb(26 25 31 / 0.1) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(26 25 31 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-darkSecondary\/70{
-  --tw-gradient-from: rgb(26 25 31 / 0.7) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(26 25 31 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .via-horizonTeal-200{
   --tw-gradient-to: rgb(170 233 228 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #AAE9E4 var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
-.via-sidebar{
-  --tw-gradient-to: rgb(45 45 51 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #2d2d33 var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
 .to-horizonGreen-200{
   --tw-gradient-to: #7BFECE var(--tw-gradient-to-position);
-}
-
-.to-secondary{
-  --tw-gradient-to: #24262c var(--tw-gradient-to-position);
-}
-
-.to-secondary\/50{
-  --tw-gradient-to: rgb(36 38 44 / 0.5) var(--tw-gradient-to-position);
-}
-
-.to-primary{
-  --tw-gradient-to: #7551FF var(--tw-gradient-to-position);
-}
-
-.to-secondary\/10{
-  --tw-gradient-to: rgb(36 38 44 / 0.1) var(--tw-gradient-to-position);
 }
 
 .to-secondary\/70{
@@ -1088,14 +1025,6 @@ video {
 
 .bg-1600{
   background-size: 1600px 600px;
-}
-
-.bg-cover{
-  background-size: cover;
-}
-
-.bg-fixed{
-  background-attachment: fixed;
 }
 
 .bg-center{
@@ -1237,10 +1166,6 @@ video {
 
 .text-center{
   text-align: center;
-}
-
-.font-ns{
-  font-family: Noto Sans, sans-serif;
 }
 
 .font-raleway{
@@ -1466,7 +1391,7 @@ video {
 .backdrop-blur-3xl{
   --tw-backdrop-blur: blur(64px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .transition{
@@ -1501,6 +1426,22 @@ video {
 
 html {
   scroll-behavior: smooth;
+}
+
+#root{
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+  --tw-gradient-from: #1a191f var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(26 25 31 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #24262c var(--tw-gradient-to-position);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: Noto Sans, sans-serif;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 /* * {
@@ -1656,7 +1597,7 @@ html {
   content: var(--tw-content);
   --tw-backdrop-blur: blur(64px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .after\:content-\[\'\'\]::after{

@@ -1,0 +1,40 @@
+.portfolio {
+	margin: 94px 0;
+	> .container {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0 15px;
+	}
+	&__sort {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 50px;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 8px;
+		&__btn {
+			@include portFolioBtn;
+		}
+		@media screen and (max-width: 767px) {
+			justify-content: start;
+		}
+	}
+	&__list {
+		display: grid;
+		gap: 30px;
+		grid-template-columns: 1fr 1fr 1fr;
+		@media screen and (max-width: 1169px) {
+			grid-template-columns: 1fr 1fr;
+		}
+		@media screen and (max-width: 767px) {
+			place-items: center;
+			grid-template-columns: 1fr;
+		}
+		> li {
+			@include porfolioCard;
+		}
+	}
+}

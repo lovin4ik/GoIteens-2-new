@@ -1,6 +1,7 @@
 @import './base/reset';
 @import './utils/colors';
 @import './utils/fonts';
+@import './utils/mixins';
 @import './components/all';
 
 @import './layout/header';
@@ -9,11 +10,13 @@
 @import './layout/work';
 @import './layout/team';
 @import './layout/clients';
+@import './layout/portfolio';
 
 @import './layout/footer';
 
 @import './layout/modal';
 @import './layout/burger';
+
 // * {
 // 	outline: 1px solid red;
 // }

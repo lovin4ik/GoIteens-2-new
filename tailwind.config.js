@@ -145,9 +145,7 @@ const config = {
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				homeButton:
-					'linear-gradient(112.83deg, rgba(255, 255, 255, 0.52) 0%, rgba(255, 255, 255, 0) 110.84%)',
-				'ws-hero':
-					"linear-gradient(0deg, #2f303a66, #2f303a66), url('../../pages/webstudio-tw/assets/hero-bg.png')"
+					'linear-gradient(112.83deg, rgba(255, 255, 255, 0.52) 0%, rgba(255, 255, 255, 0) 110.84%)'
 			}
 		},
 		keyframes: {

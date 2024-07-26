@@ -6,9 +6,13 @@
 	box-sizing: border-box;
 	font-family: $roboto;
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
 	min-height: 100vh;
 	font-family: $roboto;
+	scroll-behavior: smooth;
 }
 li {
 	list-style: none;

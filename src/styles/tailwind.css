@@ -6,6 +6,11 @@
 html {
 	scroll-behavior: smooth;
 }
+
+#root {
+	@apply text-white min-h-screen font-ns overflow-x-hidden bg-gradient-to-tr from-darkSecondary to-secondary bg-fixed bg-no-repeat bg-cover;
+}
+
 /* * {
 	outline: 1px solid red;
 } */
