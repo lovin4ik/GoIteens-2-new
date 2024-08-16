@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 /*
-! tailwindcss v3.4.6 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.7 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -986,16 +986,16 @@ video {
   background-color: rgb(245 244 250 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\.\/\.\.\/src\/pages\/webstudio\/assets\/hero-bg\.png\'\)\]{
+  background-image: url('../../src/pages/webstudio/assets/hero-bg.png');
+}
+
 .bg-gradient-to-bl{
   background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
 }
 
 .bg-gradient-to-tr{
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\.\.\/\.\.\/src\/pages\/webstudio\/assets\/hero-bg\.png\'\)\]{
-  background-image: url('../../src/pages/webstudio/assets/hero-bg.png');
 }
 
 .from-darkSecondary\/70{

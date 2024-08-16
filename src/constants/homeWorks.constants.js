@@ -1,11 +1,11 @@
 export const homeWorks = [
 	{
-		link: './pages/webstudio/webstudio.html',
+		link: 'https://lovin4ik.github.io/webstudio-scss/',
 		id: 23,
 		title: 'Principles of using vector graphics'
 	},
 	{
-		link: './pages/webstudio/webstudio.html',
+		link: 'https://lovin4ik.github.io/webstudio-scss/',
 		id: 24,
 		title: 'Connecting SVG images to project'
 	},
@@ -15,7 +15,7 @@ export const homeWorks = [
 		title: 'positioning elements purpose & properties'
 	},
 	{
-		link: './pages/webstudio/webstudio.html',
+		link: 'https://lovin4ik.github.io/webstudio-scss/',
 		id: 26,
 		title: 'implementing styles for modals'
 	},
@@ -25,47 +25,47 @@ export const homeWorks = [
 		title: 'use cases of positioning'
 	},
 	{
-		link: './pages/webstudio/webstudio.html',
+		link: 'https://lovin4ik.github.io/webstudio-scss/',
 		id: 28,
 		title: 'Css transitions and transformations'
 	},
 	{
-		link: './pages/webstudio/webstudio.html',
+		link: 'https://lovin4ik.github.io/webstudio-scss/',
 		id: 29,
 		title: 'Principles of animating hovers'
 	},
 	{
-		link: './pages/webstudio/webstudio.html',
+		link: 'https://lovin4ik.github.io/webstudio-scss/',
 		id: 30,
 		title: 'Css @keyframes, Libraries animation'
 	},
 	{
-		link: './pages/webstudio/webstudio.html',
+		link: 'https://lovin4ik.github.io/webstudio-scss/',
 		id: 31,
 		title: 'SASS/SCSS preprocessors'
 	},
 	{
-		link: './pages/webstudio/webstudio.html',
+		link: 'https://lovin4ik.github.io/webstudio-scss/',
 		id: 32,
 		title: 'Variables scope names, syntaxis SCSS'
 	},
 	{
-		link: './pages/webstudio/webstudio.html',
+		link: 'https://lovin4ik.github.io/webstudio-scss/',
 		id: 33,
 		title: 'Structural and template in SCSS'
 	},
 	{
-		link: './pages/webstudio/webstudio.html',
+		link: 'https://lovin4ik.github.io/webstudio-scss/',
 		id: 34,
 		title: 'Adaptive layout & Responsive'
 	},
 	{
-		link: './pages/webstudio/webstudio.html',
+		link: 'https://lovin4ik.github.io/webstudio-scss/',
 		id: 35,
 		title: 'Mobile and desktop first strategies'
 	},
 	{
-		link: './pages/webstudio/webstudio.html',
+		link: 'https://lovin4ik.github.io/webstudio-scss/',
 		id: 36,
 		title: 'Layouting the mobile menu'
 	},
@@ -73,5 +73,15 @@ export const homeWorks = [
 		link: 'https://lovin4ik.github.io/GoITeens-2-semester/pages/homeWorks/HW-17/index.html',
 		id: 39,
 		title: 'Libraries. Introduction to Bootstrap'
+	},
+	{
+		link: 'https://lovin4ik.github.io/GoITeens-2-semester/pages/homeWorks/HW-17/index.html',
+		id: 37,
+		title: 'Adaptive images. Retinization'
+	},
+	{
+		link: 'https://lovin4ik.github.io/GoITeens-2-semester/pages/homeWorks/HW-17/index.html',
+		id: 38,
+		title: 'Stages and approaches of graphics retinization'
 	}
 ]

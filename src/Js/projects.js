@@ -6,7 +6,7 @@ export const projectItem = project => `
 		>
 			<a
 				href="${project.link}"
-				target="_blank"
+				target='_blank'
 				rel="noopener noreferrer"
 			>
 				<div class="p-5 ${project.color}">
